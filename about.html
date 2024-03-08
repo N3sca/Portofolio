@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/N_gold_back_180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/icons/N_gold_back_167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/N_gold_back_152x152.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/N_gold_back_120x120.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#0c5647">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#aa8b32">
+
+    <link rel="manifest" href="manifest.json">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/thejs.js"></script>
+    <script src="https://kit.fontawesome.com/15f55d277b.js" crossorigin="anonymous"></script>
+
+    <title>Portfólio</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/N_gold_back_120x120.webp">
+                <a href="index.html">N3sca</a>
+            </a>
+        </div>
+        <div class="nav-links">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a class="selected" href="about.html">About</a>
+                <a href="#">Terms</a>
+            </div>
+            <div>
+                <a href="#" onclick="themes(); return false;"><i id="themeS" class="fa-solid fa-moon"></i></a>
+                <script>
+                if(document.querySelector("html").getAttribute("data-theme") == "dark"){
+                    document.getElementById("themeS").classList.replace("fa-moon", "fa-sun");
+                }
+                </script>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <div class="about">
+                <h2>Who is N3sca?</h2>
+                <p>
+                    HI, <b>I’m Baltasar</b> and yes, it's the name from one of the three Magi. 
+                    <br>
+                    I’m <b>21 years old</b> and I finished Networks and Computer Systems course from university.
+                    <br><br>
+                    At the moment I'm an enthusiast about Web Development, doing some projects that you can se here on my <b><i>Portfolio</i></b> which is also a project.
+                    <br>
+                    Not just Web Development, but also some exploring Networks Systems like <b>Windows Server</b>, <b>AWS</b>, <b>Vercel</b>, and more...
+                    <br><br>
+                    Contact Me : ***
+                </p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://github.com/N3sca"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <img src="assets/img/N_gold_back_512x512.webp">
+        </div>
+    </div>
+
+    <footer>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://github.com/N3sca"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Copyright ©2024, All rights reserved.</p>
+    </footer>
+</body>
+</html>

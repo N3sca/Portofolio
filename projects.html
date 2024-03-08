@@ -22,25 +22,31 @@
         <script src="assets/js/thejs.js"></script>
         <script src="https://kit.fontawesome.com/15f55d277b.js" crossorigin="anonymous"></script>
     
-        <title>Portfólio</title>
+        <title>Portfólio</title> 
     </head>
 <body>
     <nav>
-        <div class="logo">
-            <img src="assets/img/N_gold_back_120x120.webp">
-            <a href="#">N3sca</a>
+        <div class="logo" >
+            <a href="index.html">
+                <img src="assets/img/N_gold_back_120x120.webp">
+                <a href="index.html">N3sca</a>
+            </a>
         </div>
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a class="selected"  href="#">Projects</a>
-            <a href="#">About</a>
-            <a href="#">Terms</a>
-            <a href="#" onclick="themes(); return false;"><i id="themeS" class="fa-solid fa-sun"></i></a>
-            <script>
-            if(document.querySelector("html").getAttribute("data-theme") == "dark"){
-                document.getElementById("themeS").classList.replace("fa-moon", "fa-sun");
-            }
-            </script>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a class="selected" href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="#">Terms</a>
+            </div>
+            <div>
+                <a href="#" onclick="themes(); return false;"><i id="themeS" class="fa-solid fa-moon"></i></a>
+                <script>
+                if(document.querySelector("html").getAttribute("data-theme") == "dark"){
+                    document.getElementById("themeS").classList.replace("fa-moon", "fa-sun");
+                }
+                </script>
+            </div>
         </div>
     </nav>
 
