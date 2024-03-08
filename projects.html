@@ -35,6 +35,12 @@
             <a class="selected"  href="#">Projects</a>
             <a href="#">About</a>
             <a href="#">Terms</a>
+            <a href="#" onclick="themes(); return false;"><i id="themeS" class="fa-solid fa-sun"></i></a>
+            <script>
+            if(document.querySelector("html").getAttribute("data-theme") == "dark"){
+                document.getElementById("themeS").classList.replace("fa-moon", "fa-sun");
+            }
+            </script>
         </div>
     </nav>
 
@@ -111,6 +117,6 @@
         </div>
         <p>Copyright ©2024, All rights reserved.</p>
     </footer>
-    
+
 </body>
 </html>

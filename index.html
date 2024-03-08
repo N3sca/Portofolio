@@ -35,11 +35,11 @@
             <a href="projects.html">Projects</a>
             <a href="#">About</a>
             <a href="#">Terms</a>
-            <a href="#" onclick="themes(); return false();"><i id="themeS" class="fa-solid"></i></a>
+            <a href="#" onclick="themes(); return false;"><i id="themeS" class="fa-solid fa-sun"></i></a>
             <script>
             if(document.querySelector("html").getAttribute("data-theme") == "dark"){
-                document.getElementById("themeS").classList.add("fa-moon");
-            }else document.getElementById("themeS").classList.add("fa-sun");
+                document.getElementById("themeS").classList.replace("fa-moon", "fa-sun");
+            }
             </script>
         </div>
     </nav>
