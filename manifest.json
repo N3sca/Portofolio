@@ -1,0 +1,31 @@
+{
+    "short_name": "N3sca Portfolio",
+    "name": "N3sca Portfolio",
+    "icons": [
+        {
+            "src": "assets/icons/N_gold_back_192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "assets/icons/N_gold_back_512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "assets/icons/N_gold_back_512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ],
+    "start_url": "index.html",
+    "background_color": "#aa8b32",
+    "orientation": "portrait-primary",
+    "display_override": ["fullscreen", "minimal-ui"],
+    "display": "standalone",
+    "theme_color": "#aa8b32",
+    "description": "N3sca Portfolio",
+    "prefer_related_applications": false
+}
+
