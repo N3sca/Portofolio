@@ -32,15 +32,21 @@
         </div>
         <div class="nav-links">
             <a class="selected" href="index.html">Home</a>
-            <a href="#">Projects</a>
+            <a href="projects.html">Projects</a>
             <a href="#">About</a>
             <a href="#">Terms</a>
+            <a href="#" onclick="themes(); return false();"><i id="themeS" class="fa-solid"></i></a>
+            <script>
+            if(document.querySelector("html").getAttribute("data-theme") == "dark"){
+                document.getElementById("themeS").classList.add("fa-moon");
+            }else document.getElementById("themeS").classList.add("fa-sun");
+            </script>
         </div>
     </nav>
     
     <div class="main">
         <div class="info">
-            <h1>Hello, I'm N3sca, <br>Web Developer</h1>
+            <h1>Hello, I'm N3sca <br>Web Developer</h1>
             <p>
                 I'm N3sca, a attent of Web Developer and Computer Networks and Systems guy.
                 <br>

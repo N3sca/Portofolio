@@ -21,7 +21,7 @@
 }
 
 :root{
-    --thecolor2: #ccab50;
+    --thecolor2: #cba333;
     --thecolor: #aa8b32;
 
     --muted: #848586;
@@ -78,6 +78,7 @@ nav .logo img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    box-shadow: -2px 3px 4px 0px rgba(0,0,0,0.1);
 }
 
 nav .logo a{
@@ -170,7 +171,7 @@ nav .nav-links a:hover,nav .nav-links a.selected{
 .recent .header h4,
 .separator h4{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .recent .header a{
