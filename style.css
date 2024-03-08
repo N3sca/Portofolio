@@ -12,12 +12,12 @@
   }
 
 ::selection{
-    color: var(--white);
-    background-color: var(--thecolor2);
+    color: #fff;
+    background-color: var(--thecolor);
 }
 ::-moz-selection{
-    color: var(--white);
-    background-color: var(--thecolor2);
+    color: #fff;
+    background-color: var(--thecolor);
 }
 
 :root{
@@ -188,6 +188,7 @@ nav .nav-links a:hover,nav .nav-links a.selected{
     padding: 24px;
     width: 460px;
     border-radius: 20px;
+    box-shadow: 0px 5px 1px 0px rgba(0,0,0,0.1);
 }
 
 .recent .posts .post-item h3{
