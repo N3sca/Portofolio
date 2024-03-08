@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: color 0.1s ease;
     font-family: "Open Sans", sans-serif;
 }
 *, *:before, *:after {
@@ -23,24 +24,33 @@
     --thecolor2: #ccab50;
     --thecolor: #aa8b32;
 
-    --black: #000000;
-    --black2: #333333;
-    --white: #ffffff;
-    --white2: #e4e7ea;
-
     --muted: #848586;
 
-    --backgroud: var(--white);
-    --backgroud2: var(--white2);
+    --color: #333333;
+    --color2: #000000;
+
+    --background: #ffffff;
+    --background2: #e4e7ea;
 }
+
+[data-theme="dark"] {
+    --muted: #848586;
+
+    --color: #ffffff;
+    --color2: #e4e7ea;
+
+    --background: #24292e;
+    --background2: #2b3137;
+  }
+
 body{
-    background-color: var(--backgroud2);
-    color: var(--black2);
+    background-color: var(--background2);
+    color: var(--color);
 }
 /*-------------- NAV ---------------*/ 
 a{
     text-decoration: none;
-    color: var(--black2);
+    color: var(--color);
 }
 
 img{
@@ -51,7 +61,7 @@ img{
 
 nav{
     padding: 20px 150px;
-    background-color: var(--backgroud);
+    background-color: var(--background);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,19 +119,19 @@ nav .nav-links a:hover,nav .nav-links a.selected{
     width: 100%;
 }
 
-.main .info button{
+.main .info input[type="button"]{
     padding: 10px 30px;
     background: var(--thecolor);
     border: none;
-    color: var(--white);
+    color: #fff;
     font-size: 16px;
     border-radius: 12px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
-.main .info button:hover{
-    background: var(--thecolor);
+.main .info input[type="button"]:hover{
+    background: var(--thecolor2);
 }
 
 .main img{
@@ -147,7 +157,7 @@ nav .nav-links a:hover,nav .nav-links a.selected{
 /*-------------- main ---------------*/
 .recent{
     padding: 60px 150px;
-    background-color: var(--backgroud);
+    background-color: var(--background);
 }
 
 .recent .header{
@@ -174,7 +184,7 @@ nav .nav-links a:hover,nav .nav-links a.selected{
 }
 
 .recent .posts .post-item{
-    background-color: var(--white2);
+    background-color: var(--background2);
     padding: 24px;
     width: 460px;
     border-radius: 20px;
@@ -370,7 +380,7 @@ footer p{
         font-size: 15px;
     }
 
-    .main .info button{
+    .main .info input[type="button"]{
         font-size: 15px;
         padding: 8px 22px;
     }
@@ -456,7 +466,7 @@ footer p{
         margin-bottom: 16px;
     }
 
-    .main .info button{
+    .main .info input[type="button"]{
         padding: 6px 20px;
         font-size: 13px;
     }

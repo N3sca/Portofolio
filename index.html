@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="ligth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@
                 <a href="https://github.com/N3sca"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <button>look, it's a button</button>
+            <input type="button" value="Look It's a button! (CLICK)" aria-label="change theme" onclick="theme()">
         </div>
         <img src="assets/img/N_gold_back_512x512.webp">
     </div>
@@ -153,5 +153,15 @@
         <p>Copyright ©2024, All rights reserved.</p>
     </footer>
 
+    <script>
+        function theme(){
+            if(document.querySelector("html").getAttribute("data-theme") == "dark"){
+                document.querySelector("html").setAttribute("data-theme", "light");
+            }else{
+                document.querySelector("html").setAttribute("data-theme", "dark");
+            }
+        }
+        
+    </script>
 </body>
 </html>
