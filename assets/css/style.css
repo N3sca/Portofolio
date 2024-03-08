@@ -72,6 +72,7 @@ nav .logo{
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 nav .logo img{
@@ -100,7 +101,9 @@ nav .nav-links a:hover,nav .nav-links a.selected{
 }
 /*-------------- NAV ---------------*/ 
 /*-------------- main ---------------*/ 
-.main {
+
+.main,
+.content{
     padding: 0 150px;
     display: flex;
     align-items: center;
@@ -108,14 +111,25 @@ nav .nav-links a:hover,nav .nav-links a.selected{
     gap: 50px;
     height: calc(100vh - 80px);
 }
+.content .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
 
 .main .info h1{
     font-size: 44px;
     margin-bottom: 25px;
 }
 
-.main .info p{
-    font-size: 16px;
+.content .container .about h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.main .info p,
+.content .container .about p{
+    font-size: 17px;
     margin-bottom: 10px;
     width: 100%;
 }
@@ -135,24 +149,28 @@ nav .nav-links a:hover,nav .nav-links a.selected{
     background: var(--thecolor2);
 }
 
-.main img{
+.main img,
+.content .container img{
     width: 400px;
     height: 400px;
     border-radius: 140px;
 }
 
-.main .info .socials{
+.main .info .socials,
+.content .container .about .socials{
     margin-bottom: 30px;
 }
 
-.main .info i{
+.main .info i,
+.content .container .about .socials i{
     padding: 0 10px 0 0;
     font-size: 40px;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-.main .info i:hover{
+.main .info i:hover,
+.content .container .about .socials i:hover{
     color: var(--thecolor);
 }
 /*-------------- main ---------------*/
@@ -314,7 +332,9 @@ footer p{
         padding: 20px 60px;
     }
 
-    .main{
+    .main,
+    .content,
+    .content .container{
         padding: 0 60px;
     }
 
@@ -335,11 +355,14 @@ footer p{
         padding: 20px 40px;
     }
 
-    .main{
+    .main,
+    .content,
+    .content .container{
         padding: 0 40px;
     }
 
-    .main img{
+    .main img,
+    .content .container img{
         width: 340px;
         height: 340px;
     }
@@ -365,11 +388,14 @@ footer p{
         padding: 20px;
     }
 
-    .main{
+    .main,
+    .content,
+    .content .container{
         padding: 0 20px;
     }
 
-    .main img{
+    .main img,
+    .content .container img{
         width: 300px;
         height: 300px;
     }
@@ -378,7 +404,8 @@ footer p{
         font-size: 34px;
     }
 
-    .main .info p{
+    .main .info p,
+    .content .container .about p{
         font-size: 15px;
     }
 
@@ -452,7 +479,9 @@ footer p{
         display: none;
     }
 
-    .main{
+    .main,
+    .content,
+    .content .container{
         flex-direction: column;
         justify-content: space-around;
         margin: 40px 0;
@@ -464,7 +493,8 @@ footer p{
         margin-bottom: 16px;
     }
 
-    .main .info p{
+    .main .info p,
+    .content .container .about p{
         margin-bottom: 16px;
     }
 
@@ -473,7 +503,8 @@ footer p{
         font-size: 13px;
     }
 
-    .main img{
+    .main img,
+    .content .container img{
         margin-top: 20px;
         width: 100%;
         height: auto;
