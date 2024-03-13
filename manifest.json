@@ -20,11 +20,11 @@
         }
     ],
     "start_url": "index.html",
-    "background_color": "#aa8b32",
+    "background_color": "#2b3137",
     "orientation": "portrait-primary",
     "display_override": ["fullscreen", "minimal-ui"],
     "display": "standalone",
-    "theme_color": "#aa8b32",
+    "theme_color": "#24292e",
     "description": "N3sca Portfolio",
     "prefer_related_applications": false
 }
