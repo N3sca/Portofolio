@@ -442,3 +442,76 @@ footer p i{
         flex-direction: column;
     }
 }
+
+/*-------------- Cokkies ---------------*/ 
+.Cokkies {
+    position: fixed;
+    bottom: 50px;
+    right: -370px;
+    max-width: 345px;
+    width: 100%;
+    background: var(--background2);
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .Cokkies.show {
+    right: 20px;
+  }
+  .Cokkies header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  header i {
+    color: var(--thecolor);
+    font-size: 32px;
+  }
+  header h2 {
+    color: var(--thecolor);
+    font-weight: 500;
+  }
+  .Cokkies .data {
+    margin-top: 16px;
+  }
+  .Cokkies .data p {
+    color: var(--color);
+    font-size: 16px;
+  }
+  .Cokkies .data p a {
+    color: var(--thecolor);
+    text-decoration: none;
+  }
+  .Cokkies .data p a:hover {
+    text-decoration: underline;
+  }
+  .Cokkies .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Cokkies .buttons .cokkiesbtn {
+    border: none;
+    color: var(--color);
+    padding: 8px 0;
+    border-radius: 4px;
+    background: var(--thecolor);
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+  }
+  .Cokkies .buttons #acceptBtn:hover {
+    background-color: var(--thecolor2);
+  }
+  .Cokkies #declineBtn {
+    border: 2px solid var(--thecolor);
+    background-color: var(--background2);
+    color: var(--thecolor);
+  }
+  #declineBtn:hover {
+    background-color: var(--thecolor);
+    color: #fff;
+  }
