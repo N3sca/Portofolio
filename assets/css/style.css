@@ -154,7 +154,7 @@ nav .nav-links a:hover,nav .nav-links a.selected{
 .container img{
     width: 100%;
     height: auto;
-    border-radius: 30PX;
+    border-radius: 30px;
 }
 
 .main .info .socials,
@@ -233,7 +233,41 @@ nav .nav-links a:hover,nav .nav-links a.selected{
 .projects .item .details .socials a i:hover{
     color: var(--thecolor);
 }
-/*-------------- projects ---------------*/ 
+/*-------------- projects ---------------*/
+/*-------------- Main Projects ---------------*/
+.mainproject{
+    margin-top: 15px;
+    padding: 0px 290px;
+    height: calc(100vh - 80px);
+}
+.mainproject img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.mainproject .info{
+    margin-top: 15px;
+}
+.mainproject .info .header{
+    display: flex;
+    justify-content: space-between;
+}
+.mainproject .info .header h3{
+    font-size: 30px;
+}
+.mainproject .info p{
+    width: 700px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.mainproject .info .header .socials i{
+    font-size: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-bottom: 16px;
+}
+/*-------------- Main Projects ---------------*/
 /*-------------- FOOTER ---------------*/ 
 footer{
     padding: 40px 0;
@@ -282,7 +316,8 @@ footer p i{
     }
 
     .projects,
-    .separator{
+    .separator,
+    .mainproject{
         padding: 40px 60px 0;
     }
 
@@ -308,11 +343,13 @@ footer p i{
     }
 
     .projects,
-    .separator{
+    .separator,
+    .mainproject{
         padding: 40px 40px 0;
     }
 
-    .projects .item .details p{
+    .projects .item .details p,
+    .mainproject .info p{
         width: 100%;
     }
 
@@ -368,7 +405,8 @@ footer p i{
     }
 
     .projects,
-    .separator{
+    .separator,
+    .mainproject{
         padding: 40px 20px 0;
     }
 
@@ -395,7 +433,8 @@ footer p i{
         margin-bottom: 12px;
     }
 
-    .projects .item .details p{
+    .projects .item .details p,
+    .mainproject .info p{
         font-size: 14px;
     }
 
