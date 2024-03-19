@@ -26,8 +26,8 @@ document.querySelectorAll(".cokkiesbtn").forEach((button) => {
     button.addEventListener("click", () => {
         document.querySelector(".Cokkies").classList.remove("show");
         if (button.id == "acceptBtn") {
-            //set cookies for 1 month. 60 = 1 min, 60 = 1 hours, 24 = 1 day, 30 = 30 days
-            document.cookie = "PortfolioN3sca=teste; max-age=" + 60 * 60 * 24 * 30;
+            //set cookies for 1 month. 60 = 1 min, 60 = 1 hours, 24 = 1 day, 30 = 30 days (60 * 60 * 24 * 30)
+            document.cookie = "PortfolioN3sca=teste; max-age=" + 300; //300 = 5 min
         }
     });
   });
