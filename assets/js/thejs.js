@@ -74,7 +74,7 @@ function leftarrow(){
         
     }else{
         document.getElementById("myImg" + pointerimg).style.display = "none";
-        pointerimg = 3;
+        pointerimg = maximg;
     }
 
     document.getElementById("orientation").setAttribute("ori", pointerimg);
