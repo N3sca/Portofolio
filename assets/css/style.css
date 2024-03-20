@@ -30,7 +30,9 @@
     --color2: #000000;
 
     --background: #ffffff;
-    --background2: #e4e7ea;
+    --background2: #e3e7eb;
+
+    --projectcount: #ffffffb5;
 }
 
 [data-theme="dark"] {
@@ -41,6 +43,8 @@
 
     --background: #24292e;
     --background2: #2b3137;
+
+    --projectcount: #333333b5;
   }
 
 body{
@@ -175,18 +179,33 @@ nav .nav-links a:hover,nav .nav-links a.selected{
 /*-------------- Main ---------------*/  
 /*-------------- projects ---------------*/ 
 .projects{
-    padding: 40px 290px 0;
+    padding: 15px 290px 0;
 }
 
 .projects .item{
     display: flex;
+    position: relative;
     gap: 30px;
     margin-bottom: 30px;
-    padding-bottom: 30px;
+    padding: 30px 20px 30px 20px;
     border-bottom: 2px solid var(--white2);
 }
-
-
+.projects .item:hover{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.clickhere{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 6px 10px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--thecolor);
+    right: 0;
+}
 .projects .item img{
     width: 320px;
     height: 200px;
@@ -219,7 +238,7 @@ nav .nav-links a:hover,nav .nav-links a.selected{
 }
 
 .projects .item .details p{
-    width: 700px;
+    width: 100%;
     text-align: justify;
     margin-bottom: 5px;
 }
@@ -238,12 +257,58 @@ nav .nav-links a:hover,nav .nav-links a.selected{
 .mainproject{
     margin-top: 15px;
     padding: 0px 290px;
-    height: calc(100vh - 80px);
 }
-.mainproject img{
+.mainproject .images{
+    position: relative;
+}
+.mainproject .images img{
     width: 100%;
     height: auto;
     border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.mainproject .images img:hover{
+    opacity: 0.7;
+}
+.numbertext{
+    color: var(--color2);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 6px 10px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: var(--projectcount);
+}
+.rightarrow, .leftarrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    margin-top: -22px;
+    font-size: 35px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.rightarrow i, .leftarrow i{
+    color: #fff;
+}
+.rightarrow i:hover, .leftarrow i:hover{
+    color: var(--thecolor);
+}
+.rightarrow{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.leftarrow{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.imagenone{
+    display: none;
 }
 .mainproject .info{
     margin-top: 15px;
@@ -254,18 +319,22 @@ nav .nav-links a:hover,nav .nav-links a.selected{
 }
 .mainproject .info .header h3{
     font-size: 30px;
+    margin-bottom: 10px;
 }
 .mainproject .info p{
-    width: 700px;
+    width: 100%;
     text-align: justify;
     margin-bottom: 5px;
 }
+.mainproject .info p a{
+    text-decoration: underline;
+    color: var(--thecolor2);
+}
 .mainproject .info .header .socials i{
-    font-size: 30px;
+    font-size: 36px;
     padding-right: 10px;
     cursor: pointer;
     transition: color 0.3s ease;
-    margin-bottom: 16px;
 }
 /*-------------- Main Projects ---------------*/
 /*-------------- FOOTER ---------------*/ 
@@ -315,7 +384,10 @@ footer p i{
         padding: 60px;
     }
 
-    .projects,
+    .projects{
+        padding: 15px 60px 0;
+    }
+
     .separator,
     .mainproject{
         padding: 40px 60px 0;
@@ -342,17 +414,14 @@ footer p i{
         padding: 40px;
     }
 
-    .projects,
+    .projects{
+        padding: 15px 40px 0;
+    }
+
     .separator,
     .mainproject{
         padding: 40px 40px 0;
     }
-
-    .projects .item .details p,
-    .mainproject .info p{
-        width: 100%;
-    }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -404,7 +473,9 @@ footer p i{
         font-size: 14px;
     }
 
-    .projects,
+    .projects{
+        padding: 15px 20px 0;
+    }
     .separator,
     .mainproject{
         padding: 40px 20px 0;
@@ -412,7 +483,6 @@ footer p i{
 
     .projects .item{
         flex-direction: column;
-        padding: 0 20px 30px;
     }
 
     .projects .item img{
@@ -477,10 +547,100 @@ footer p i{
         border-radius: 50px;
     }
 
-    .recent .posts{
+    .mainproject .info .header{
         flex-direction: column;
     }
 }
+  
+/*-------------- MainProject Modal ---------------*/ 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 65px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 150vh;
+}
+  
+  /* Caption of Modal Image */
+.imgalt {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+   /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover{
+    color: var(--thecolor);
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  /* Add Animation */
+.modal-content, .imgalt {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+}
+/*-------------- MainProject Modal ---------------*/ 
+
+/*-------------- MainProject Fade ---------------*/ 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+/*-------------- MainProject Fade ---------------*/ 
 
 /*-------------- Cokkies ---------------*/ 
 .Cokkies {
@@ -494,6 +654,7 @@ footer p i{
     padding: 15px 25px 22px;
     transition: right 0.3s ease;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
   }
   .Cokkies.show {
     right: 20px;

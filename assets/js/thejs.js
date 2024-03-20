@@ -32,3 +32,52 @@ document.querySelectorAll(".cokkiesbtn").forEach((button) => {
     });
   });
 };
+
+
+
+function modal(x){
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModalImg").src = document.getElementById(x).src;
+    document.getElementById("caption").innerHTML = document.getElementById(x).alt;
+}
+function modal2(x){
+    document.getElementById(x).style.display = "none";
+}
+
+var pointerimg;
+var maximg;
+function maxiimg(){
+    maximg = document.getElementById("orientation").getAttribute("max");
+}
+function rightarrow(){
+    pointerimg = document.getElementById("orientation").getAttribute("ori");
+    document.getElementById("myImg" + pointerimg).style.display = "none";
+    
+    if(pointerimg != maximg){
+        pointerimg = parseInt(pointerimg) + 1;
+        
+    }else{
+        document.getElementById("myImg" + pointerimg).style.display = "none";
+        pointerimg = 1;
+    }
+
+    document.getElementById("orientation").setAttribute("ori", pointerimg);
+    document.getElementById("orientation").innerHTML = pointerimg + " / " + maximg;
+    document.getElementById("myImg" + pointerimg).style.display = "block";
+}
+function leftarrow(){
+    pointerimg = document.getElementById("orientation").getAttribute("ori");
+    document.getElementById("myImg" + pointerimg).style.display = "none";
+    
+    if(pointerimg != "1"){
+        pointerimg = parseInt(pointerimg) - 1;
+        
+    }else{
+        document.getElementById("myImg" + pointerimg).style.display = "none";
+        pointerimg = 3;
+    }
+
+    document.getElementById("orientation").setAttribute("ori", pointerimg);
+    document.getElementById("orientation").innerHTML = pointerimg + " / " + maximg;
+    document.getElementById("myImg" + pointerimg).style.display = "block";
+}
