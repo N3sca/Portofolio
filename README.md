@@ -5,4 +5,5 @@ View example:
 [ON Vercel - https://portofolio-vercel-eight.vercel.app](https://portofolio-vercel-eight.vercel.app)
 
 # Still in progress... :)
-![image](https://github.com/N3sca/Portofolio/assets/62601767/406c41dc-60ff-4008-985d-359ccf24d3ea)
+![image](https://github.com/N3sca/Portofolio/assets/62601767/a7478355-f37d-4601-b386-ee970df58172)
+
