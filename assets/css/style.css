@@ -29,8 +29,8 @@
     --color: #333333;
     --color2: #000000;
 
-    --background: #ffffff;
-    --background2: #e3e7eb;
+    --background: #e3e6e8;
+    --background2: #c6cbcf;
 
     --projectcount: #ffffffb5;
 }
@@ -60,7 +60,7 @@ a{
 img{
     object-fit: cover;
     object-position: top;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 nav{
@@ -83,7 +83,7 @@ nav .logo img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    box-shadow: -2px 3px 4px 0px rgba(0,0,0,0.1);
+    box-shadow: -2px 3px 4px 0px rgba(0,0,0,0.2);
 }
 
 nav .logo a{
@@ -203,7 +203,7 @@ nav .nav-links a:hover,nav .nav-links a.selected{
     width: 100%;
     gap: 25px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
 }
 .mainskills .container .skills .colum i{
     color: var(--thecolor2);
@@ -763,7 +763,7 @@ footer p i{
     border-radius: 8px;
     padding: 15px 25px 22px;
     transition: right 0.3s ease;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     z-index: 2;
   }
   .Cokkies.show {
