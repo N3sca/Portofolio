@@ -177,6 +177,43 @@ nav .nav-links a:hover,nav .nav-links a.selected{
     color: var(--thecolor);
 }
 /*-------------- Main ---------------*/  
+/*-------------- Skills ---------------*/
+.mainskills{
+    padding: 40px 290px 40px;
+    background-color: var(--background);
+}
+.mainskills .container{
+    padding: 20px;
+    background-color: var(--background2);
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.mainskills .container .skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.mainskills .container .skills .colum{
+    text-align: start;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+.mainskills .container .skills .colum i{
+    color: var(--thecolor2);
+}
+
+.mainskills .container .skills .columimg{
+    padding-right: 30px;
+    font-size: 150px;
+    text-align: center;
+}
+
+/*-------------- Skills ---------------*/  
 /*-------------- projects ---------------*/ 
 .projects{
     padding: 15px 290px 0;
@@ -442,7 +479,10 @@ footer p i{
     .mainterms{
         padding: 40px 60px 0;
     }
-
+    
+    .mainskills{
+        padding: 40px 60px 40px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -472,6 +512,11 @@ footer p i{
     .mainproject,
     .mainterms{
         padding: 40px 40px 0;
+    }
+
+    .mainskills{
+        padding: 40px 40px 40px;
+        
     }
 }
 
@@ -532,6 +577,11 @@ footer p i{
     .mainterms{
         padding: 40px 20px 0;
     }
+    
+    .mainskills{
+        padding: 40px 20px 40px;
+
+    }
 
     .projects .item{
         flex-direction: column;
@@ -568,8 +618,9 @@ footer p i{
         justify-content: center;
     }
 
-    nav .logo{
-        display: none;
+    nav .logo,
+    .columimg{
+        display: none !important;
     }
 
     .main{
