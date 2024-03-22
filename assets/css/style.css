@@ -202,6 +202,8 @@ nav .nav-links a:hover,nav .nav-links a.selected{
     flex-direction: column;
     width: 100%;
     gap: 25px;
+    font-weight: bold;
+    font-size: 24px;
 }
 .mainskills .container .skills .colum i{
     color: var(--thecolor2);
@@ -609,7 +611,9 @@ footer p i{
     .mainproject .info p{
         font-size: 14px;
     }
-
+    .mainskills .container .skills .colum{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -652,6 +656,9 @@ footer p i{
 
     .mainproject .info .header{
         flex-direction: column;
+    }
+    .mainskills .container .skills .colum{
+        font-size: 16px;
     }
 }
   
