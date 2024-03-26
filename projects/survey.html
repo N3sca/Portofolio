@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/N_gold_back_180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../assets/icons/N_gold_back_167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/icons/N_gold_back_152x152.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/icons/N_gold_back_120x120.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="../assets/icons/safari-pinned-tab.svg" color="#0c5647">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#24292e">
+
+    <link rel="manifest" href="../manifest.json">
+
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/thejs.js"></script>
+    <script src="https://kit.fontawesome.com/15f55d277b.js" crossorigin="anonymous"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/img/N_gold_back_120x120.webp">
+                <a href="../index.html">N3sca</a>
+            </a>
+        </div>
+        <div class="nav-links">
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a class="selected" href="../projects.html">Projects</a>
+                <a href="../about.html">About</a>
+                <a href="../termsandpolicies.html">Terms and Policies</a>
+            </div>
+            <div>
+                <a href="#" onclick="themes(); return false;"><i id="themeS" class="fa-solid fa-moon"></i></a>
+                <script>
+                if(document.querySelector("html").getAttribute("data-theme") == "dark"){
+                    document.getElementById("themeS").classList.replace("fa-moon", "fa-sun");
+                }
+                </script>
+            </div>
+        </div>
+    </nav>
+    <div class="mainproject">
+        <div class="images">
+            <div id="orientation" class="numbertext" ori="1" max="1">1 / 1</div>
+            <img id="myImg1"  class="fade" style="display: block;" src="../assets/img/survey.webp" alt="Login Page" onclick="modal('myImg1')">
+            <div class="rightarrow" onclick="rightarrow()"><i class="fa-solid fa-square-caret-right"></i></div>
+            <div class="leftarrow" onclick="leftarrow()"><i class="fa-solid fa-square-caret-left"></i></div>
+        </div>     
+        <div class="info">
+            <div class="header">
+                <h3>Survey</h3>
+                <div class="socials">
+                    <a href="https://github.com/N3sca/Survey" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://survey-vercel-beta.vercel.app" target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="item-info">
+                <div class="year-badge">2024</div>
+                <h4>HTML/CSS/JS</h4>
+            </div>
+            <p>
+                Just enjoying the learning <br>
+                <br>
+                View example: <br>
+                ON Vercel - <a href="https://survey-vercel-beta.vercel.app">https://survey-vercel-beta.vercel.app</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="socials">
+            <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://github.com/N3sca" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Copyright <i class="fa-regular fa-copyright"></i>2024, All rights reserved.</p>
+    </footer>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="modal2('myModal')">&times;</span>
+        <img class="modal-content" id="myModalImg">
+        <div id="caption" class="imgalt"></div>
+    </div>
+
+
+
+    <div class="Cokkies">
+        <header>
+            <i class="fa-solid fa-cookie-bite"></i>
+            <h2>Cookies Consent</h2>
+        </header>
+        <div class="data">
+            <p>This website use cookies to help you have a superior and more relevant browsing experience on the website. <a href="#"> Read more...</a></p>
+        </div>
+        <div class="buttons">
+            <button class="cokkiesbtn" id="acceptBtn">Accept</button>
+            <button class="cokkiesbtn" id="declineBtn">Decline</button>
+        </div>
+    </div>
+<script>   
+window.addEventListener("load", executeCodes);
+window.addEventListener("load", maxiimg);
+</script>
+</body>
+</html>
