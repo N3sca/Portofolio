@@ -16,6 +16,10 @@ function themes(){
     }
 }
 
+function jokebutton(e){
+    document.getElementById("joke").style.display = "none";
+    document.getElementById("notjoke").style.display = "block";
+}
 
 
 const executeCodes = () => {

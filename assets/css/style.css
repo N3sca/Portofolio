@@ -51,6 +51,20 @@ body{
     background-color: var(--background2);
     color: var(--color);
 }
+mark {
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(
+      to right,
+      #cba233ac,
+      #cba333ac 3%,
+      #cba333ac
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: white;
+    font-weight: 600 !important;
+}
 /*-------------- NAV ---------------*/ 
 a{
     text-decoration: none;
@@ -214,6 +228,13 @@ nav .nav-links a:hover,nav .nav-links a.selected{
     font-size: 150px;
     text-align: center;
 }
+.mainskills .border-left{
+    border-left: 2px solid var(--muted);
+    border-radius: 2px;
+}
+.mainskills .padding-left{
+    padding-left: 10px;
+}
 
 /*-------------- Skills ---------------*/  
 /*-------------- projects ---------------*/ 
@@ -244,6 +265,19 @@ nav .nav-links a:hover,nav .nav-links a.selected{
     z-index: 1;
     background-color: var(--thecolor);
     right: 0;
+}
+.clickhere2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 6px 10px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--thecolor);
+    left: 0;
+    bottom: 0;
 }
 .projects .item img{
     width: 320px;

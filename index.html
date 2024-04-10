@@ -62,9 +62,10 @@
                 <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                 <a href="https://github.com/N3sca" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/baltasar-lopes-64243023a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <input type="button" value="Hoo, thats a button! (Click here)" onclick="themes();">
+            <input id="joke" type="button" value="Wait!, who is N3sca?? (click)" onclick="themes();jokebutton(this)">
+            <input id="notjoke" style="display: none;" type="button" value="Whoops, wrong function... click again!" onclick="themes();window.location.href = './about.html'">
         </div>
         <img src="assets/img/N_gold_back_512x512.webp">
     </div>
@@ -121,6 +122,28 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
+                <div class="colum border-left padding-left">
+                    <div>
+                        Portuguese <br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div>
+                        English <br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div>
+                        French <br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -132,7 +155,8 @@
     <div class="projects">
         <div class="item" onclick="location.href='./projects/goldendashboard.html'">
             <div class="clickhere">Favourite <i class="fa-solid fa-face-grin-stars"></i></div>
-            <img src="assets/img/golde-dashboard_1920x1080.webp">
+            <div class="clickhere2">you can click <i class="fa-solid fa-face-surprise"></i></div>
+            <img src="assets/img/example.gif">
             <div class="details">
                 <h3>Golden Dashboard</h3>
                 <div class="item-info">
@@ -142,7 +166,7 @@
                 <p>
                     Its a dashboard, yup! Don't get bored, you can allways just check other's stuff
                     <br>
-                    <u>Current</u> Project!
+                    <mark>&nbsp;<u>Current</u> Project!&nbsp;</mark>
                 </p>
                 <div class="socials">
                     <a href="https://github.com/N3sca/golden-dashboard"><i class="fa-brands fa-github"></i></a>
@@ -162,7 +186,7 @@
                 <p>
                     Its me enjoying the learnig and decide to do this.
                     <br>
-                    Still in <u>Progress</u>!
+                    <mark>&nbsp;Still in <u>Progress</u>!&nbsp;</mark>
                 </p>
                 <div class="socials">
                     <a href="https://github.com/N3sca/ToDo"><i class="fa-brands fa-github"></i></a>
@@ -182,7 +206,7 @@
                 <p>
                     This one was a website with backoffice for a game server.
                     <br>
-                    <u>Abandoned</u> Project!
+                    <mark>&nbsp;<u>Abandoned</u> Project!&nbsp;</mark>
                 </p>
                 <div class="socials">
                     <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -197,7 +221,7 @@
             <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
             <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="https://github.com/N3sca" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/baltasar-lopes-64243023a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <p>Copyright <i class="fa-regular fa-copyright"></i>2024, All rights reserved.</p>
     </footer>
@@ -209,7 +233,7 @@
             <h2>Cookies Consent</h2>
         </header>
         <div class="data">
-            <p>This website use cookies to help you have a superior and more relevant browsing experience on the website. <a href="#"> Read more...</a></p>
+            <p>This website use cookies to help you have a superior and more relevant browsing experience on the website. <a href="#"> Kidding, no cookies here...</a></p>
         </div>
         <div class="buttons">
             <button class="cokkiesbtn" id="acceptBtn">Accept</button>
